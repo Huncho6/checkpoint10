@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #000000;
+    color:aliceblue;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.header-title {
+    font-size: 24px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    margin-right: 30px;
+    margin-bottom: 20px;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;    
+}
+
+.dropdown-content a {
+    background-color: #1f1d1d;
+    color: white ;
+    padding: 6px 10px;
+    font-size: 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.search button{
+    margin-top: 20px;
+    border: 1px;
+    border-radius: 50px ;
+    width: 120px;
+    height: 30px;
+    background-color: #1f1d1d;
+    color: #fff  ;
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    border-radius: 50px;
+    padding: 10px 15px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-container input {
+    background: none;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    /* flex: 1; */
+    padding-left: 30px; 
+    padding-right: 30px; 
+}
+
+.search-container input::placeholder {
+    color: #bbb;
+}
+
+.search-container .search-icon {
+    position: absolute;
+    left: 15px;
+}
+
+.search-container .search-icon img {
+    width: 20px;
+    height: 20px;
+}
+
+.search-container .voice-icon {
+    position: absolute;
+    right: 15px;
+}
+
+.search-container .voice-icon img {
+    width: 20px;
+    height: 20px;
+}
+#result {
+    margin-top: 20px;
+    background-color: #504923f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#result h2 {
+    margin: 0;
+}
+
+ #result .weather {
+    margin: 10px;
+ }
+#result .description {
+    margin: 10px 0;
+}  
+
+#result .temp-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.temp-container .title {
+    margin: 0;
+    font-weight: 50px;
+}
+
+.temp-container .temp {
+    margin: 0;
+    font-size: 20px;
+}
